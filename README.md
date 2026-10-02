@@ -1,5 +1,7 @@
 ﻿# −2 logit bias on Bonsai 2 27B (RTX 5060 Laptop)
 
+Run by Joseph Murray Adams.
+
 Date: 2026-10-02  
 Result: on a fixed 50-question MATH-500 sample, a −2 logit bias on “wait”, “maybe”, and “perhaps” changed accuracy from 44/50 to 43/50 and average length from 845.2 to 872.3 tokens. Tokens per second stayed 29.3. This does not reproduce the Qwen3.5-4B report of higher accuracy and fewer tokens.
 
