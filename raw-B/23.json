@@ -1,0 +1,49 @@
+{
+    "n":  23,
+    "unique_id":  "test/prealgebra/192.json",
+    "answer":  "2",
+    "boxed":  "2",
+    "correct":  1,
+    "completion_tokens":  160,
+    "wall_sec":  5.6,
+    "tokens_per_sec":  28.57,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n2^3\\cdot 3^x=72\n\\]\n\nSince \\(2^3=8\\),\n\n\\[\n8\\cdot 3^x=72\n\\]\n\nDivide both sides by 8:\n\n\\[\n3^x=9\n\\]\n\nSince \\(9=3^2\\),\n\n\\[\nx=2\n\\]\n\n\\[\n\\boxed{2}\n\\]",
+                                        "reasoning_content":  "We need answer simple math. Need solve: 2^3 * 3^x = 72. 2^3=8. 8*3^x=72 =\u003e 3^x=9 =\u003e x=2. Need final boxed. Ensure no hidden trick. Provide concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790960895,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  160,
+                  "prompt_tokens":  88,
+                  "total_tokens":  248,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-o3y7jN2QMwOSlL9trjdrLPUZKwR0f3uk",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  46,
+                    "prompt_ms":  288.112,
+                    "prompt_per_token_ms":  6.263304347826088,
+                    "prompt_per_second":  159.66013217082246,
+                    "predicted_n":  160,
+                    "predicted_ms":  5174.323,
+                    "predicted_per_token_ms":  32.54291194968554,
+                    "predicted_per_second":  30.728657642748622
+                }
+}

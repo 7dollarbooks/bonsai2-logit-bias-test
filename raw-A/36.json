@@ -1,0 +1,49 @@
+{
+    "n":  36,
+    "unique_id":  "test/prealgebra/1558.json",
+    "answer":  "1.25",
+    "boxed":  "1.25",
+    "correct":  1,
+    "completion_tokens":  254,
+    "wall_sec":  8.76,
+    "tokens_per_sec":  29,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Bill’s total displacement is \\(1\\) mile south and \\(\\frac{3}{4}\\) mile east.\n\n\\[\n\\sqrt{1^2+\\left(\\frac34\\right)^2}\n= \\sqrt{1+\\frac{9}{16}}\n= \\sqrt{\\frac{25}{16}}\n= \\frac54\n= 1.25\n\\]\n\n\\[\n\\boxed{1.25}\n\\]",
+                                        "reasoning_content":  "We need solve simple geometry. Need final boxed decimal nearest hundredth. Let\u0027s reason: Bill walks 1/2 mile south, then 3/4 mile east, then 1/2 mile south. Net displacement: south total 1 mile, east 0.75 mile. Direct distance = sqrt(1^2 + 0.75^2) = sqrt(1 + 0.5625)=sqrt(1.5625)=1.25 exactly? 1.25^2=1.5625 yes. Nearest hundredth 1.25. Need final answer boxed. Ensure maybe decimal to nearest hundredth: 1.25.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959417,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  254,
+                  "prompt_tokens":  130,
+                  "total_tokens":  384,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-JV6TIZm7vZkMLXsF9QgMmRYjBvMrsfp7",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  88,
+                    "prompt_ms":  342.572,
+                    "prompt_per_token_ms":  3.892863636363636,
+                    "prompt_per_second":  256.8803054540359,
+                    "predicted_n":  254,
+                    "predicted_ms":  8261.341,
+                    "predicted_per_token_ms":  32.65352173913043,
+                    "predicted_per_second":  30.624568093727156
+                }
+}

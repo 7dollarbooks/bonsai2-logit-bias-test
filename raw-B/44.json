@@ -1,0 +1,49 @@
+{
+    "n":  44,
+    "unique_id":  "test/algebra/2046.json",
+    "answer":  "x^3+3x-6",
+    "boxed":  "x^3+3x-6",
+    "correct":  1,
+    "completion_tokens":  344,
+    "wall_sec":  11.73,
+    "tokens_per_sec":  29.33,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\nx\\left(x(1+x)+2x\\right)-3(x^2-x+2)\n\\]\n\nFirst simplify inside the parentheses:\n\n\\[\nx(1+x)+2x = x+x^2+2x = x^2+3x\n\\]\n\nNow multiply by \\(x\\):\n\n\\[\nx(x^2+3x)=x^3+3x^2\n\\]\n\nDistribute the \\(-3\\):\n\n\\[\n-3(x^2-x+2)=-3x^2+3x-6\n\\]\n\nCombine:\n\n\\[\nx^3+3x^2-3x^2+3x-6=x^3+3x-6\n\\]\n\n\\[\n\\boxed{x^3+3x-6}\n\\]",
+                                        "reasoning_content":  "We need answer solve algebra. Need expand simplify: x(x(1+x)+2x)-3(x^2-x+2). Let\u0027s compute carefully.\n\nInside: x(1+x)+2x = x + x^2 + 2x = x^2 + 3x. Multiply by x: x^3 + 3x^2. Then -3(x^2 - x + 2) = -3x^2 + 3x -6. Sum: x^3 + 3x^2 -3x^2 +3x -6 = x^3 + 3x -6. Check: x^3 + 3x^2 -3x^2 cancel. final x^3+3x-6. Need boxed.\n"
+                                    }
+                    }
+                ],
+    "created":  1790961428,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  344,
+                  "prompt_tokens":  106,
+                  "total_tokens":  450,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-FXBleuS4vZLRWi9UVP5MPDcT25d2efBa",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  64,
+                    "prompt_ms":  310.161,
+                    "prompt_per_token_ms":  4.846265625,
+                    "prompt_per_second":  206.34444691627897,
+                    "predicted_n":  344,
+                    "predicted_ms":  11205.146,
+                    "predicted_per_token_ms":  32.66806413994169,
+                    "predicted_per_second":  30.610935368445887
+                }
+}

@@ -1,0 +1,49 @@
+{
+    "n":  33,
+    "unique_id":  "test/precalculus/1105.json",
+    "answer":  "-\\frac{\\pi}{6}",
+    "boxed":  "-\\frac{\\pi}{6}",
+    "correct":  1,
+    "completion_tokens":  106,
+    "wall_sec":  3.86,
+    "tokens_per_sec":  27.46,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n\\arcsin\\left(-\\frac12\\right)=-\\frac{\\pi}{6}\n\\]\n\n\\[\n\\boxed{-\\frac{\\pi}{6}}\n\\]",
+                                        "reasoning_content":  "We need answer simple arcsin(-1/2) in radians. Need final boxed. Need be careful: principal value arcsin range [-pi/2, pi/2]. sin(-pi/6)=-1/2. So answer -pi/6. Need final with boxed.\n"
+                                    }
+                    }
+                ],
+    "created":  1790961116,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  106,
+                  "prompt_tokens":  93,
+                  "total_tokens":  199,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-DKBX0Vor6OtF777wOVGm1hVMN4wiaebF",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  51,
+                    "prompt_ms":  282.273,
+                    "prompt_per_token_ms":  5.5347647058823535,
+                    "prompt_per_second":  180.67615393608315,
+                    "predicted_n":  106,
+                    "predicted_ms":  3421.75,
+                    "predicted_per_token_ms":  32.588095238095235,
+                    "predicted_per_second":  30.6860524585373
+                }
+}

@@ -1,0 +1,49 @@
+{
+    "n":  29,
+    "unique_id":  "test/number_theory/691.json",
+    "answer":  "255",
+    "boxed":  "255",
+    "correct":  1,
+    "completion_tokens":  147,
+    "wall_sec":  5.17,
+    "tokens_per_sec":  28.43,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "The largest eight-digit base-2 integer is\n\n\\[\n11111111_2 = 2^8 - 1 = 256 - 1 = 255.\n\\]\n\n\\[\n\\boxed{255}\n\\]",
+                                        "reasoning_content":  "We need answer simple math. Need solve: largest eight-digit base 2 integer. In base 2, eight-digit means leading digit 1, all digits 1: 11111111_2 = 2^8 -1 = 255. Need final boxed. Ensure maybe \"integer\" base 2 eight-digit largest is 255. Provide concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959324,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  147,
+                  "prompt_tokens":  87,
+                  "total_tokens":  234,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-AIHoJOHEipR3XTm0xeiuLEmqY33VImq9",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  45,
+                    "prompt_ms":  270.536,
+                    "prompt_per_token_ms":  6.011911111111111,
+                    "prompt_per_second":  166.3364579944998,
+                    "predicted_n":  147,
+                    "predicted_ms":  4739.291,
+                    "predicted_per_token_ms":  32.460897260273974,
+                    "predicted_per_second":  30.80629570963252
+                }
+}

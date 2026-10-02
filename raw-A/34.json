@@ -1,0 +1,49 @@
+{
+    "n":  34,
+    "unique_id":  "test/algebra/170.json",
+    "answer":  "11",
+    "boxed":  "11",
+    "correct":  1,
+    "completion_tokens":  277,
+    "wall_sec":  9.45,
+    "tokens_per_sec":  29.31,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n|x-2|\\le 5.6 \\implies -5.6\\le x-2\\le 5.6\n\\]\n\nAdd 2:\n\n\\[\n-3.6\\le x\\le 7.6\n\\]\n\nThe integers in this interval are\n\n\\[\n-3,-2,-1,0,1,2,3,4,5,6,7\n\\]\n\nThere are \\(11\\) integers.\n\n\\[\n\\boxed{11}\n\\]",
+                                        "reasoning_content":  "We need answer math problem. Need solve: How many integers in solution set of |x-2| \u003c= 5.6? Need final boxed. Let\u0027s reason.\n\nInequality |x-2| \u003c= 5.6 means -5.6 \u003c= x-2 \u003c= 5.6 =\u003e -3.6 \u003c= x \u003c= 7.6. Integers x satisfying: from ceil(-3.6) = -3 to floor(7.6)=7 inclusive. Count = 7 - (-3) + 1 = 11. Check: -3,-2,-1,0,1,2,3,4,5,6,7 = 11. Final boxed{11}. Need maybe concise. Ensure final answer in boxed.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959402,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  277,
+                  "prompt_tokens":  88,
+                  "total_tokens":  365,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-3IjPKTwhFQUBGcawm9rUald9SWbvBFJu",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  46,
+                    "prompt_ms":  286.889,
+                    "prompt_per_token_ms":  6.236717391304348,
+                    "prompt_per_second":  160.3407589694969,
+                    "predicted_n":  277,
+                    "predicted_ms":  8998.405,
+                    "predicted_per_token_ms":  32.60291666666667,
+                    "predicted_per_second":  30.672102444822162
+                }
+}

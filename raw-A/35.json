@@ -1,0 +1,49 @@
+{
+    "n":  35,
+    "unique_id":  "test/algebra/769.json",
+    "answer":  "11",
+    "boxed":  "11",
+    "correct":  1,
+    "completion_tokens":  160,
+    "wall_sec":  5.65,
+    "tokens_per_sec":  28.32,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "The sum of the first \\(N\\) positive odd numbers is\n\n\\[\n1+3+5+\\cdots+(2N-1)=N^2.\n\\]\n\nGiven that this sum is 121,\n\n\\[\nN^2=121\n\\]\n\n\\[\nN=11.\n\\]\n\n\\[\n\\boxed{11}\n\\]",
+                                        "reasoning_content":  "We need answer simple math. Need solve: sum first N positive odd numbers = N^2 =121 =\u003e N=11. Need final boxed. Ensure maybe positive odd numbers: 1+3+...+(2N-1)=N^2. 121=11^2. N=11. Provide concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959408,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  160,
+                  "prompt_tokens":  92,
+                  "total_tokens":  252,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-TJEcXxb74JuVJHyXQ1Jdc5FGCepy727r",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  50,
+                    "prompt_ms":  287.802,
+                    "prompt_per_token_ms":  5.7560400000000005,
+                    "prompt_per_second":  173.73055086483066,
+                    "predicted_n":  160,
+                    "predicted_ms":  5177.885,
+                    "predicted_per_token_ms":  32.565314465408804,
+                    "predicted_per_second":  30.707518610397873
+                }
+}

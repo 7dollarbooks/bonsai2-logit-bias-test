@@ -1,0 +1,49 @@
+{
+    "n":  50,
+    "unique_id":  "test/geometry/795.json",
+    "answer":  "\\frac{\\sqrt{21}}{5}",
+    "boxed":  "\\frac{\\sqrt{21}}{5}",
+    "correct":  1,
+    "completion_tokens":  513,
+    "wall_sec":  17.64,
+    "tokens_per_sec":  29.08,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Since the triangle is right-angled at \\(S\\), angles \\(R\\) and \\(T\\) are complementary:\n\n\\[\nT = 90^\\circ - R\n\\]\n\nThus,\n\n\\[\n\\sin T = \\cos R\n\\]\n\nGiven \\(\\sin R = \\frac{2}{5}\\),\n\n\\[\n\\cos R = \\sqrt{1-\\sin^2 R}\n= \\sqrt{1-\\left(\\frac{2}{5}\\right)^2}\n= \\sqrt{\\frac{21}{25}}\n= \\frac{\\sqrt{21}}{5}\n\\]\n\nTherefore,\n\n\\[\n\\boxed{\\frac{\\sqrt{21}}{5}}\n\\]",
+                                        "reasoning_content":  "We need solve geometry/trig problem. Need final answer boxed. Let\u0027s analyze carefully.\n\nProblem: In triangle RST, shown, sin R = 2/5. What is sin T? Diagram: T=(0,0), S=(2,0), R=(2,sqrt(21)). Right angle mark at S? draw(rightanglemark(R,S,T,10)); label 5 on side RT? label(\"$5$\",(R+T)/2,NW); So side RT length 5? Coordinates: T(0,0), S(2,0), R(2,sqrt21). Then RT length sqrt(2^2+21)=5. RS vertical length sqrt21, TS=2. Right angle at S. So triangle right at S. Given sin R = 2/5. In right triangle, angle R at vertex R, opposite side TS=2, hypotenuse RT=5, so sin R=2/5 consistent. Need sin T. Angle T opposite side RS=sqrt21, hypotenuse RT=5, so sin T = sqrt21/5. But maybe they expect using sin R=2/5 and right angle? Since right angle at S, T = 90 - R, sin T = cos R. If sin R=2/5, cos R = sqrt(1-4/25)=sqrt21/5. So answer sqrt21/5. Need ensure no ambiguity: sin R positive, R acute? Right triangle, yes. Could be sin T = sqrt21/5.\n\nNeed final with boxed. Provide concise explanation. Ensure final answer in \\boxed{}.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959841,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  513,
+                  "prompt_tokens":  202,
+                  "total_tokens":  715,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-7ITd1MRzFvUN4PdHyhozlobtyd3fONPh",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  160,
+                    "prompt_ms":  450.828,
+                    "prompt_per_token_ms":  2.817675,
+                    "prompt_per_second":  354.90253489135546,
+                    "predicted_n":  513,
+                    "predicted_ms":  16997.906,
+                    "predicted_per_token_ms":  33.19903515625,
+                    "predicted_per_second":  30.121357301305235
+                }
+}

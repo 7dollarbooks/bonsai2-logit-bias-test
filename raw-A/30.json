@@ -1,0 +1,49 @@
+{
+    "n":  30,
+    "unique_id":  "test/algebra/2476.json",
+    "answer":  "10",
+    "boxed":  "10",
+    "correct":  1,
+    "completion_tokens":  261,
+    "wall_sec":  8.92,
+    "tokens_per_sec":  29.26,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "The total enrollment is\n\n\\[\n520+650=1170\n\\]\n\nThe 8th grade’s share of the total enrollment is\n\n\\[\n\\frac{650}{1170}=\\frac{5}{9}\n\\]\n\nWith 18 total representatives, the 8th grade should have\n\n\\[\n18\\cdot \\frac{5}{9}=10\n\\]\n\n\\[\n\\boxed{10}\n\\]",
+                                        "reasoning_content":  "We need answer math problem. Need solve. Problem: 7th grade 520, 8th grade 650, total 18 representatives. Fair representation proportional to enrollment. Need how many representatives should 8th grade have? Total enrollment 1170. 8th share = 650/1170 = 65/117 = 5/9? 650/1170 divide 130 =5/9. 18 * 5/9 = 10. So 10. Need final boxed. Could mention 7th gets 8. Ensure no ambiguity: fair representation proportional. Answer 10.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959333,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  261,
+                  "prompt_tokens":  129,
+                  "total_tokens":  390,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-J74qaAY4NxH0NUSxT6LwcFSzVEAZezmA",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  87,
+                    "prompt_ms":  324.338,
+                    "prompt_per_token_ms":  3.728022988505747,
+                    "prompt_per_second":  268.2386892686025,
+                    "predicted_n":  261,
+                    "predicted_ms":  8454.458,
+                    "predicted_per_token_ms":  32.517146153846156,
+                    "predicted_per_second":  30.753006283785428
+                }
+}

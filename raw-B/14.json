@@ -1,0 +1,49 @@
+{
+    "n":  14,
+    "unique_id":  "test/prealgebra/1742.json",
+    "answer":  "\\dfrac{33}{100}",
+    "boxed":  "\\frac{33}{100}",
+    "correct":  0,
+    "completion_tokens":  204,
+    "wall_sec":  7.23,
+    "tokens_per_sec":  28.22,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "There are 100 possible numbers from 1 to 100.\n\nThe multiples of 3 are:\n\n\\[\n3, 6, 9, \\ldots, 99\n\\]\n\nThe number of multiples of 3 is:\n\n\\[\n\\left\\lfloor \\frac{100}{3} \\right\\rfloor = 33\n\\]\n\nSo the probability is:\n\n\\[\n\\frac{33}{100}\n\\]\n\n\\[\n\\boxed{\\frac{33}{100}}\n\\]",
+                                        "reasoning_content":  "We need answer simple probability. Need final boxed. Let\u0027s reason: numbers 1-100 inclusive total 100. Multiples of 3: floor(100/3)=33 (3,6,...,99). Probability 33/100. Need final in boxed. Ensure no extra? Could include brief.\n"
+                                    }
+                    }
+                ],
+    "created":  1790960518,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  204,
+                  "prompt_tokens":  98,
+                  "total_tokens":  302,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-mvHhhqFCTvNemcA1xwppmNWa6qSTZ7rf",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  56,
+                    "prompt_ms":  297.393,
+                    "prompt_per_token_ms":  5.310589285714285,
+                    "prompt_per_second":  188.3030199096818,
+                    "predicted_n":  204,
+                    "predicted_ms":  6740.175,
+                    "predicted_per_token_ms":  33.20283251231527,
+                    "predicted_per_second":  30.117912368744136
+                }
+}

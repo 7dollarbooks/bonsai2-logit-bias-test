@@ -1,0 +1,49 @@
+{
+    "n":  42,
+    "unique_id":  "test/algebra/1004.json",
+    "answer":  "4",
+    "boxed":  "4",
+    "correct":  1,
+    "completion_tokens":  129,
+    "wall_sec":  4.68,
+    "tokens_per_sec":  27.56,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n2^8 = 4^x = (2^2)^x = 2^{2x}\n\\]\n\nSo,\n\n\\[\n8 = 2x \\implies x = 4\n\\]\n\n\\[\n\\boxed{4}\n\\]",
+                                        "reasoning_content":  "We need answer simple math. Need solve: 2^8 = 4^x. 4=2^2 so RHS=(2^2)^x=2^{2x}. Equate exponents: 8=2x =\u003e x=4. Need final boxed. Ensure no extra? Could include brief.\n"
+                                    }
+                    }
+                ],
+    "created":  1790961342,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  129,
+                  "prompt_tokens":  85,
+                  "total_tokens":  214,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-IguIF0pu4XdghqMQAWShGYmnihIinA9T",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  43,
+                    "prompt_ms":  297.792,
+                    "prompt_per_token_ms":  6.925395348837209,
+                    "prompt_per_second":  144.39608854502472,
+                    "predicted_n":  129,
+                    "predicted_ms":  4169.055,
+                    "predicted_per_token_ms":  32.5707421875,
+                    "predicted_per_second":  30.70240138352696
+                }
+}

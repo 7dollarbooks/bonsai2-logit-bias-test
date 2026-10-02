@@ -1,0 +1,49 @@
+{
+    "n":  39,
+    "unique_id":  "test/intermediate_algebra/1837.json",
+    "answer":  "34",
+    "boxed":  "34",
+    "correct":  1,
+    "completion_tokens":  387,
+    "wall_sec":  13.11,
+    "tokens_per_sec":  29.52,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "The roots of \\(g(x)=f(x+5)\\) are the roots of \\(f\\) shifted left by \\(5\\).\n\nFor \\(f(x)=x^3-49x^2+623x-2015\\), the sum of its roots is\n\n\\[\n49.\n\\]\n\nThus the sum of the roots of \\(g\\) is\n\n\\[\n49-3\\cdot 5=49-15=34.\n\\]\n\n\\[\n\\boxed{34}\n\\]",
+                                        "reasoning_content":  "We need solve problem. Need final answer boxed. Let\u0027s analyze carefully.\n\nProblem: f(x)=x^3 -49x^2 +623x -2015. g(x)=f(x+5). Compute sum of roots of g.\n\nWe need sum of roots of g. g is cubic. If roots of f are r1,r2,r3, then roots of g are r_i -5? Since g(x)=f(x+5)=0 =\u003e x+5 = root of f =\u003e x = root -5. Sum roots g = sum roots f - 15. Sum roots f = 49 (by Vieta for monic cubic x^3 -49x^2 + ...). So sum = 49 -15 =34. Alternatively expand g: f(x+5) = (x+5)^3 -49(x+5)^2 +623(x+5)-2015. Coefficient x^2: 3*5 -49 =15-49=-34, so sum roots = -coeff x^2 =34. Answer 34.\n\nNeed final with boxed. Ensure no hidden issue: roots maybe complex? Sum still. Good.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959527,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  387,
+                  "prompt_tokens":  128,
+                  "total_tokens":  515,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-SU33WMUw13Z88ayf7ZjblGJYexjclXY5",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  86,
+                    "prompt_ms":  335.713,
+                    "prompt_per_token_ms":  3.9036395348837214,
+                    "prompt_per_second":  256.1711938471253,
+                    "predicted_n":  387,
+                    "predicted_ms":  12607.117,
+                    "predicted_per_token_ms":  32.660924870466324,
+                    "predicted_per_second":  30.617626535868588
+                }
+}

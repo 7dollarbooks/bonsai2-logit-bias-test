@@ -1,0 +1,49 @@
+{
+    "n":  47,
+    "unique_id":  "test/prealgebra/1572.json",
+    "answer":  "60",
+    "boxed":  "60",
+    "correct":  1,
+    "completion_tokens":  200,
+    "wall_sec":  7.1,
+    "tokens_per_sec":  28.17,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Each of the 3 distinct people must be assigned to a different office.\n\n- First person: 5 choices\n- Second person: 4 choices\n- Third person: 3 choices\n\nSo the number of assignments is\n\n\\[\n5 \\times 4 \\times 3 = 60\n\\]\n\n\\[\n\\boxed{60}\n\\]",
+                                        "reasoning_content":  "We need answer simple combinatorics. Need solve: 3 people assigned to 5 different offices, no one shares office, each person exactly one office. People distinct? Usually 3 people distinct, offices distinct. Assign each person to a distinct office: P(5,3)=5*4*3=60. Need final boxed. Ensure maybe if people indistinguishable? Wording \"3 people\" usually distinct individuals. If no one shares office, choose 3 offices and assign people: C(5,3)*3! = 60. Final concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959755,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  200,
+                  "prompt_tokens":  97,
+                  "total_tokens":  297,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-HekHYBVJhFc9SGoHYW7rNWGmNMlq9PAL",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  55,
+                    "prompt_ms":  305.89,
+                    "prompt_per_token_ms":  5.561636363636364,
+                    "prompt_per_second":  179.80319722776164,
+                    "predicted_n":  200,
+                    "predicted_ms":  6572.297,
+                    "predicted_per_token_ms":  33.02661809045226,
+                    "predicted_per_second":  30.278607311872854
+                }
+}

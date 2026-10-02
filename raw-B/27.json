@@ -1,0 +1,49 @@
+{
+    "n":  27,
+    "unique_id":  "test/algebra/1072.json",
+    "answer":  "\\frac{243}{625}",
+    "boxed":  "\\frac{243}{625}",
+    "correct":  1,
+    "completion_tokens":  449,
+    "wall_sec":  15.13,
+    "tokens_per_sec":  29.68,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "The common ratio is\n\n\\[\n\\frac{\\frac{25}{3}}{\\frac{125}{9}}=\\frac{3}{5}.\n\\]\n\nThe eighth term is\n\n\\[\n\\frac{125}{9}\\left(\\frac{3}{5}\\right)^7\n= \\frac{125}{9}\\cdot \\frac{3^7}{5^7}\n= \\frac{3^5}{5^4}\n= \\frac{243}{625}.\n\\]\n\n\\[\n\\boxed{\\frac{243}{625}}\n\\]",
+                                        "reasoning_content":  "We need solve problem. Need final answer boxed. Let\u0027s analyze carefully.\n\nSequence: 125/9, 25/3, 5, 3, ... geometric? Let\u0027s check ratios: (25/3)/(125/9) = (25/3)*(9/125)=225/375=3/5? 225/375=3/5 yes. Next 5/(25/3)=15/25=3/5. Next 3/5=3/5. So common ratio r=3/5. First term a1=125/9. Eighth term a8 = a1 r^7 = (125/9)*(3/5)^7. Compute: 125=5^3. (3/5)^7 = 3^7 / 5^7. Multiply = 5^3 * 3^7 / (9*5^7) = 3^7 / (9*5^4) = 3^7 / (3^2*5^4) = 3^5 / 5^4 = 243/625. Check: 3^5=243, 5^4=625. So answer 243/625.\n\nNeed final with boxed. Could include concise explanation. Ensure common fraction.\n"
+                                    }
+                    }
+                ],
+    "created":  1790961002,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  449,
+                  "prompt_tokens":  114,
+                  "total_tokens":  563,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-mMT8zsV79PlT9NpeoZVkRMuo35BZBQdh",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  72,
+                    "prompt_ms":  320.216,
+                    "prompt_per_token_ms":  4.447444444444445,
+                    "prompt_per_second":  224.84822744647363,
+                    "predicted_n":  449,
+                    "predicted_ms":  14642.829,
+                    "predicted_per_token_ms":  32.684886160714285,
+                    "predicted_per_second":  30.595180753664476
+                }
+}

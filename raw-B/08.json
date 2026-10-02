@@ -1,0 +1,49 @@
+{
+    "n":  8,
+    "unique_id":  "test/algebra/2253.json",
+    "answer":  "\\frac{3\\sqrt{3}}{4}",
+    "boxed":  "\\frac{3\\sqrt3}{4}",
+    "correct":  0,
+    "completion_tokens":  279,
+    "wall_sec":  9.61,
+    "tokens_per_sec":  29.03,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n9\\\u00262=\\frac{\\sqrt{9\\cdot2+9}}{\\sqrt{9\\cdot2-2}}\n=\\frac{\\sqrt{27}}{\\sqrt{16}}\n=\\frac{3\\sqrt3}{4}\n\\]\n\n\\[\n\\boxed{\\frac{3\\sqrt3}{4}}\n\\]",
+                                        "reasoning_content":  "We need solve problem. Need final answer boxed. Let\u0027s analyze carefully.\n\nOperation defined for positive integers a,b: a \u0026 b = sqrt(ab + a) / sqrt(ab - b). Need 9 \u0026 2.\n\nCompute: a=9,b=2. ab=18. ab+a=18+9=27. ab-b=18-2=16. sqrt(27)/sqrt(16)=sqrt(27)/4 = (3 sqrt3)/4. Common fraction simplest radical form: 3√3/4. Check domain positive: ab-b=16 positive.\n\nNeed final with boxed. Could include steps. Ensure no mistakes: sqrt(ab+a)/sqrt(ab-b) = sqrt((ab+a)/(ab-b)) = sqrt(27/16)=sqrt27/4=3sqrt3/4. Yes.\n\nNeed final answer only? User asks solve. We can provide concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790960342,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  279,
+                  "prompt_tokens":  137,
+                  "total_tokens":  416,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-mJFcx08QINlZayYEDE7ikaltcmGX2RAh",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  95,
+                    "prompt_ms":  341.328,
+                    "prompt_per_token_ms":  3.5929263157894735,
+                    "prompt_per_second":  278.32466132283315,
+                    "predicted_n":  279,
+                    "predicted_ms":  9082.249,
+                    "predicted_per_token_ms":  32.66996043165467,
+                    "predicted_per_second":  30.609158590564956
+                }
+}

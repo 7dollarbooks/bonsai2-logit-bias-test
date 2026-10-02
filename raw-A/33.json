@@ -1,0 +1,49 @@
+{
+    "n":  33,
+    "unique_id":  "test/precalculus/1105.json",
+    "answer":  "-\\frac{\\pi}{6}",
+    "boxed":  "-\\frac{\\pi}{6}",
+    "correct":  1,
+    "completion_tokens":  108,
+    "wall_sec":  3.95,
+    "tokens_per_sec":  27.34,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n\\arcsin\\left(-\\frac12\\right)=-\\frac{\\pi}{6}\n\\]\n\n\\[\n\\boxed{-\\frac{\\pi}{6}}\n\\]",
+                                        "reasoning_content":  "We need answer simple arcsin(-1/2) in radians. Need final boxed. Need be careful: principal value arcsin range [-pi/2, pi/2]. sin(-pi/6)=-1/2. So answer -pi/6. Need maybe explain. Final boxed.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959393,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  108,
+                  "prompt_tokens":  93,
+                  "total_tokens":  201,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-3mDBme8GemkZBtJj3jSaK5TwUegsbkVj",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  51,
+                    "prompt_ms":  278.478,
+                    "prompt_per_token_ms":  5.46035294117647,
+                    "prompt_per_second":  183.13834486027622,
+                    "predicted_n":  108,
+                    "predicted_ms":  3490.913,
+                    "predicted_per_token_ms":  32.62535514018692,
+                    "predicted_per_second":  30.651007343924064
+                }
+}

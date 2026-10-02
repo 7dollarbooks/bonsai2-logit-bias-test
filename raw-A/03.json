@@ -1,0 +1,49 @@
+{
+    "n":  3,
+    "unique_id":  "test/precalculus/801.json",
+    "answer":  "55^\\circ",
+    "boxed":  "55^\\circ",
+    "correct":  1,
+    "completion_tokens":  2394,
+    "wall_sec":  79.15,
+    "tokens_per_sec":  30.25,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Let the vectors form a triangle with vertices \\(O\\), \\(A\\), and \\(B\\), where\n\n\\[\n\\overrightarrow{OA}=\\mathbf a,\\qquad \\overrightarrow{OB}=\\mathbf b,\\qquad \\overrightarrow{BA}=\\mathbf a-\\mathbf b.\n\\]\n\nThe angle between \\(\\mathbf a\\) and \\(\\mathbf b\\) is the angle at \\(O\\):\n\n\\[\n\\angle AOB=29^\\circ.\n\\]\n\nThe angle between \\(\\mathbf b=\\overrightarrow{OB}\\) and \\(\\mathbf a-\\mathbf b=\\overrightarrow{BA}\\) is \\(84^\\circ\\). But the interior angle at \\(B\\) is between \\(\\overrightarrow{BO}=-\\mathbf b\\) and \\(\\overrightarrow{BA}=\\mathbf a-\\mathbf b\\), so\n\n\\[\n\\angle OBA=180^\\circ-84^\\circ=96^\\circ.\n\\]\n\nThus the third angle is\n\n\\[\n\\angle OAB=180^\\circ-29^\\circ-96^\\circ=55^\\circ.\n\\]\n\nThe angle between \\(\\mathbf a=\\overrightarrow{OA}\\) and \\(\\mathbf a-\\mathbf b=\\overrightarrow{BA}\\) is the same as the angle between \\(\\overrightarrow{AO}\\) and \\(\\overrightarrow{AB}\\), which is \\(\\angle OAB\\). Therefore, the desired angle is\n\n\\[\n\\boxed{55^\\circ}.\n\\]",
+                                        "reasoning_content":  "We need solve geometry/vector angle problem. Need final boxed. Let\u0027s analyze thoroughly.\n\nProblem: Let a and b vectors such that angle between a and b is 29°, and angle between b and a - b is 84°. Find angle between a and a - b.\n\nWe need be careful: angle between vectors usually smaller angle in [0,180]. Given angle(a,b)=29. angle(b, a-b)=84. Need angle(a, a-b). Let\u0027s denote vectors. We can set coordinate system. Let a along x-axis. Let b make angle 29° with a. Let |a|=A, |b|=B. Then a-b vector. Need angle between a and a-b.\n\nLet a = A (1,0). b = B (cos29, sin29) (assuming b above a; sign symmetric). Then a-b = (A - B cos29, -B sin29). Angle between b and a-b is 84. Need angle between a and a-b. Let\u0027s derive.\n\nLet θ = angle between a and a-b. Since a-b has y negative if b above a, angle from a to a-b is -θ (or 360-θ), smaller angle θ = arctan(|B sin29|/(A - B cos29)) if A \u003e B cos29? Could be if A - B cos29 negative then angle \u003e90. Need determine.\n\nGiven angle between b and a-b = 84. Dot product: b · (a-b) = |b||a-b| cos84. Also b·a = AB cos29. So b·(a-b)=AB cos29 - B^2 = B(A cos29 - B). This can be positive or negative. cos84 positive small, so dot product positive. Thus A cos29 - B \u003e0 =\u003e A \u003e B/cos29? Actually A cos29 \u003e B. So A \u003e B/cos29 \u003e B. Then A - B cos29 \u003e B(cos29? wait A \u003e B/cos29 =\u003e A - B cos29 \u003e B(1/cos29 - cos29)=B sin^2/cos29 \u003e0. So a-b points in quadrant IV (positive x, negative y), angle θ acute.\n\nNeed find θ. Let\u0027s use law of cos in triangle? Vectors a, b, a-b. Consider triangle with sides? If place tail at origin: a and b from origin. a-b is vector from tip of b to tip of a? Actually a - b = a + (-b). If draw triangle with vertices O, A (tip a), B (tip b). Vector a-b = A - B = vector from B to A. Angle between b (OB) and a-b (BA) is 84. Angle between a (OA) and b (OB) is 29. Need angle between a (OA) and a-b (BA). In triangle OAB, angle at O = 29. Angle between OB (b) and BA (a-b) is angle at B? Vector b is OB from O to B. Vector a-b is BA from B to A. The angle between b and a-b as free vectors: b direction O-\u003eB, a-b direction B-\u003eA. The angle between them is not the interior angle at B? Interior angle at B is between BO (B-\u003eO) and BA (B-\u003eA). BO = -b. Angle between b and BA = 180° - interior angle at B. Given 84, so interior angle at B = 96°. Then triangle angles: O=29, B=96, A=55. The angle between a (OA) and a-b (BA) as free vectors: a direction O-\u003eA, a-b direction B-\u003eA. At A, interior angle between AO (A-\u003eO) and AB (A-\u003eB) is 55. But a-b is B-\u003eA, opposite of AB. Angle between OA (O-\u003eA) and BA (B-\u003eA) =? At A, vector OA points into A, BA points into A? Wait BA is B-\u003eA, points to A. OA is O-\u003eA, points to A. Both point to A. The angle between them is 180° - interior angle at A? Let\u0027s check: interior angle at A is between AO (A-\u003eO) and AB (A-\u003eB). OA = -AO, BA = -AB. Angle between -AO and -AB equals angle between AO and AB = 55. Actually reversing both vectors preserves angle. So angle between a (OA) and a-b (BA) = angle between AO and AB = 55. So answer 55°.\n\nNeed ensure no ambiguity: angle between b and a-b = 84. In triangle, angle between OB and BA is 84. Interior angle at B is between BO and BA = 180-84=96. Sum gives A=55. Then angle between OA and BA =? Both point to A, yes angle equals interior angle at A? Let\u0027s verify with coordinates.\n\nTake triangle OAB: O at origin, A along x, B above. Interior angle at A between AO (left) and AB (from A to B) is 55. Vector a = OA (right). a-b = BA (from B to A, direction from B to A). At A, BA points into A from B, i.e. direction from B to A. OA points into A from O. The angle between OA and BA is angle between vectors pointing to A along sides AO? Wait OA vector is from O to A, direction along side from O to A. BA vector is from B to A, direction along side from B to A. At A, both point toward A. The angle between them is the angle between the lines OA and BA, but with both oriented toward A. The interior angle at A is between AO (A to O) and AB (A to B), both away from A. Reversing both gives OA and BA, same angle. So yes 55.\n\nBut let\u0027s double-check with dot product algebra to avoid sign issues. Let θ = angle between a and a-b. We can derive using triangle. But maybe there are two possible configurations? Given angle between b and a-b = 84, angle between a and b =29. Could b be below a? Symmetric. Could a-b point other side? Dot product positive forced A cos29 \u003e B. But triangle interior angle at B = 96. Then angle at A = 55. Unique.\n\nLet\u0027s test with coordinates: Let A=1? Need B such that angle between b and a-b 84. Use triangle: O=29, B=96, A=55. By law of sines: side opposite O is AB = |a-b|, opposite B is OA=|a|, opposite A is OB=|b|. Let |a|=1. Then |b| = sin55/sin96? Wait side OB opposite angle A=55, OA opposite B=96. So B = sin55/sin96 ≈0.819/0.9945=0.8235. Then a-b length = sin29/sin96≈0.4848/0.9945=0.4875. Coordinates: a=(1,0), b=(0.8235 cos29=0.720, 0.8235 sin29=0.401). a-b=(0.280,-0.401). Angle between a and a-b = arctan(0.401/0.280)=55.0. Angle between b and a-b: dot=0.720*0.280+0.401*(-0.401)=0.2016-0.1608=0.0408. |b||a-b|=0.8235*0.4875=0.4015. cos=0.1016 =\u003e angle 84.14? Let\u0027s compute more accurately: sin55=0.819152, sin96=0.994522, B=0.82366. cos29=0.87462, sin29=0.48481. b=(0.7204,0.3993). a-b=(0.2796,-0.3993). dot=0.2019-0.1594=0.0425. |a-b|=sqrt(0.0782+0.1594)=0.4875. product=0.4015. cos=0.1058? angle 83.94. Need exact? Let\u0027s compute law of sines: If O=29, B=96, A=55. Side OA=1 opposite B=96. OB = sin A / sin B = sin55/sin96. AB = sin O / sin B = sin29/sin96. Coordinates:"
+                                    }
+                    }
+                ],
+    "created":  1790958561,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  2394,
+                  "prompt_tokens":  164,
+                  "total_tokens":  2558,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-np1FX3QdJv4ii2ALJefTia3peZDefAVy",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  122,
+                    "prompt_ms":  627.512,
+                    "prompt_per_token_ms":  5.143540983606557,
+                    "prompt_per_second":  194.418592791851,
+                    "predicted_n":  2394,
+                    "predicted_ms":  78503.079,
+                    "predicted_per_token_ms":  32.805298370246554,
+                    "predicted_per_second":  30.48288080522294
+                }
+}

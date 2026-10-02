@@ -1,0 +1,49 @@
+{
+    "n":  19,
+    "unique_id":  "test/algebra/1332.json",
+    "answer":  "9",
+    "boxed":  "9",
+    "correct":  1,
+    "completion_tokens":  192,
+    "wall_sec":  6.81,
+    "tokens_per_sec":  28.19,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Since popularity is inversely proportional to cost,\n\n\\[\n(\\text{sales})(\\text{cost}) = \\text{constant}\n\\]\n\nUsing the first television:\n\n\\[\n15 \\cdot 1500 = 22500\n\\]\n\nFor a television costing \\$2500:\n\n\\[\n\\text{sales} = \\frac{22500}{2500} = 9\n\\]\n\n\\[\n\\boxed{9}\n\\]",
+                                        "reasoning_content":  "We need answer math problem. Need solve. Inversely proportional: sales * cost = constant. 15*1500 = 22500. For 2500, sales = 22500/2500 = 9. So boxed 9. Need final concise with explanation. Ensure final answer in \\boxed{}.\n"
+                                    }
+                    }
+                ],
+    "created":  1790960843,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  192,
+                  "prompt_tokens":  137,
+                  "total_tokens":  329,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-NY0ucoE9SeKTfO2GmwVJ5qIBq4lV4iOD",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  95,
+                    "prompt_ms":  335.209,
+                    "prompt_per_token_ms":  3.5285157894736843,
+                    "prompt_per_second":  283.40527849789237,
+                    "predicted_n":  192,
+                    "predicted_ms":  6239.939,
+                    "predicted_per_token_ms":  32.66983769633508,
+                    "predicted_per_second":  30.609273584244974
+                }
+}

@@ -1,0 +1,49 @@
+{
+    "n":  6,
+    "unique_id":  "test/geometry/967.json",
+    "answer":  "72",
+    "boxed":  "72",
+    "correct":  1,
+    "completion_tokens":  156,
+    "wall_sec":  5.56,
+    "tokens_per_sec":  28.06,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "A regular pentagon has 5-fold rotational symmetry, so it coincides with its original position after rotating by\n\n\\[\n\\frac{360^\\circ}{5}=72^\\circ.\n\\]\n\n\\[\n\\boxed{72}\n\\]",
+                                        "reasoning_content":  "We need answer simple geometry. Need solve: regular pentagon rotated counterclockwise about center. Minimum degrees until coincides with original position. Regular pentagon has rotational symmetry of order 5, so 360/5=72 degrees. Need final boxed. Ensure maybe \"coincides with original position\" means exactly same set of points, not labeled vertices. Minimum positive rotation = 72. Could mention if 0 not considered. Final concise.\n"
+                                    }
+                    }
+                ],
+    "created":  1790958633,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  156,
+                  "prompt_tokens":  100,
+                  "total_tokens":  256,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-o4yrE0ivvLSMyMhcZ4ql8HuH2j8h24xG",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  58,
+                    "prompt_ms":  308.081,
+                    "prompt_per_token_ms":  5.311741379310345,
+                    "prompt_per_second":  188.26217780388924,
+                    "predicted_n":  156,
+                    "predicted_ms":  5064.258,
+                    "predicted_per_token_ms":  32.67263225806452,
+                    "predicted_per_second":  30.606655506097834
+                }
+}

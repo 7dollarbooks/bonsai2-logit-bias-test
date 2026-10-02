@@ -1,0 +1,49 @@
+{
+    "n":  49,
+    "unique_id":  "test/geometry/1140.json",
+    "answer":  "\\frac{3840}{289}",
+    "boxed":  "\\frac{3840}{289}",
+    "correct":  1,
+    "completion_tokens":  989,
+    "wall_sec":  33.34,
+    "tokens_per_sec":  29.66,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "Since \\(8^2+15^2=17^2\\), triangle \\(ABC\\) is right-angled at \\(C\\).\n\nIts area is\n\n\\[\n[ABC]=\\frac12(8)(15)=60.\n\\]\n\nLet \\(CD\\) be the altitude to hypotenuse \\(AB\\). Then\n\n\\[\n[ABC]=\\frac12(AB)(CD)=\\frac12(17)(CD),\n\\]\n\nso\n\n\\[\nCD=\\frac{120}{17}.\n\\]\n\nIn a right triangle, the projection of leg \\(AC\\) onto the hypotenuse satisfies\n\n\\[\nAC^2=AD\\cdot AB.\n\\]\n\nThus\n\n\\[\nAD=\\frac{AC^2}{AB}=\\frac{8^2}{17}=\\frac{64}{17}.\n\\]\n\nNow triangle \\(ACD\\) is right-angled at \\(D\\), so\n\n\\[\n[ACD]=\\frac12(AD)(CD)\n=\\frac12\\left(\\frac{64}{17}\\right)\\left(\\frac{120}{17}\\right)\n=\\frac{3840}{289}.\n\\]\n\n\\[\n\\boxed{\\frac{3840}{289}}\n\\]",
+                                        "reasoning_content":  "We need solve geometry problem. Need final answer boxed. Let\u0027s analyze thoroughly.\n\nTriangle ABC sides AB=17, AC=8, BC=15. Notice 8-15-17 right triangle? 8^2+15^2=64+225=289=17^2. So right angle at C? Since AB hypotenuse 17, AC=8, BC=15. Yes triangle ABC right at C. D foot of altitude from C to AB (hypotenuse). Need area of triangle ACD.\n\nWe can compute. In right triangle, altitude to hypotenuse. Area ABC = (1/2)*8*15=60. Also area = (1/2)*AB*CD = (1/2)*17*CD =\u003e CD=120/17.\n\nNeed area ACD. It is right triangle? D on AB, CD perpendicular AB, so ACD right at D. Need AD length. In right triangle, projection of leg AC onto hypotenuse: AC^2 = AD*AB. So AD = AC^2/AB = 64/17. Then area ACD = (1/2)*AD*CD = (1/2)*(64/17)*(120/17)= (1/2)*7680/289=3840/289. Check.\n\nAlternative: area ratio? ACD area / ABC area = AD/AB? Since same altitude from C to AB? Triangles ACD and ABC share altitude CD to base AB? Actually ACD base AD, ABC base AB, same height CD, so ratio AD/AB = (64/17)/17 = 64/289. Area ABC=60 =\u003e 60*64/289=3840/289. Yes.\n\nNeed final answer boxed. Could include concise solution. Ensure no mistakes. Let\u0027s verify with coordinates: A=(0,0), B=(17,0). C coordinates: AC=8, BC=15. x^2+y^2=64, (x-17)^2+y^2=225 =\u003e x^2 - (x-17)^2 = -161? Let\u0027s compute: x^2+y^2=64; x^2-34x+289+y^2=225 =\u003e 64-34x+289=225 =\u003e 353-34x=225 =\u003e 34x=128 =\u003e x=64/17. y^2=64 - (4096/289)= (18496-4096)/289=14400/289 =\u003e y=120/17. D=(64/17,0). Area ACD = 1/2*64/17*120/17=3840/289. Good.\n\nNeed final. The user asks solve problem. We can present. Final answer in boxed.\n"
+                                    }
+                    }
+                ],
+    "created":  1790959823,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  989,
+                  "prompt_tokens":  121,
+                  "total_tokens":  1110,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-pfmEEXVD4C9huenIRms7cseUYFlMMSjv",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  79,
+                    "prompt_ms":  330.81,
+                    "prompt_per_token_ms":  4.18746835443038,
+                    "prompt_per_second":  238.8077748556573,
+                    "predicted_n":  989,
+                    "predicted_ms":  32826.348,
+                    "predicted_per_token_ms":  33.22504858299595,
+                    "predicted_per_second":  30.097773897967574
+                }
+}

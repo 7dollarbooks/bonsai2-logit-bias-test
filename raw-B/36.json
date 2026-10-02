@@ -1,0 +1,49 @@
+{
+    "n":  36,
+    "unique_id":  "test/prealgebra/1558.json",
+    "answer":  "1.25",
+    "boxed":  "1.25",
+    "correct":  1,
+    "completion_tokens":  291,
+    "wall_sec":  9.98,
+    "tokens_per_sec":  29.16,
+    "truncated":  0,
+    "error":  ""
+}
+{
+    "choices":  [
+                    {
+                        "finish_reason":  "stop",
+                        "index":  0,
+                        "message":  {
+                                        "role":  "assistant",
+                                        "content":  "\\[\n\\sqrt{\\left(\\frac{3}{4}\\right)^2+1^2}=\\sqrt{\\frac{9}{16}+1}=\\sqrt{\\frac{25}{16}}=\\frac{5}{4}=1.25\n\\]\n\n\\[\n\\boxed{1.25}\n\\]",
+                                        "reasoning_content":  "We need solve simple geometry. Need final boxed decimal nearest hundredth. Let\u0027s reason: Bill walks 1/2 mile south, then 3/4 mile east, then 1/2 mile south. Net displacement: south total 1 mile, east 0.75 mile. Direct distance = sqrt(1^2 + 0.75^2) = sqrt(1 + 0.5625)=sqrt(1.5625)=1.25 exactly? 1.25^2=1.5625 yes. Nearest hundredth 1.25. Need final answer boxed. Ensure no hidden trick. Starting point to final: coordinates (0,0), south negative y: (-? east x positive). After first (0,-0.5), after east (0.75,-0.5), after south (0.75,-1). Distance sqrt(0.75^2+1^2)=1.25. final.\n"
+                                    }
+                    }
+                ],
+    "created":  1790961141,
+    "model":  "C:\\Qu_models\\bonsai\\Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "system_fingerprint":  "b10743-adfffbe41",
+    "object":  "chat.completion",
+    "usage":  {
+                  "completion_tokens":  291,
+                  "prompt_tokens":  130,
+                  "total_tokens":  421,
+                  "prompt_tokens_details":  {
+                                                "cached_tokens":  42
+                                            }
+              },
+    "id":  "chatcmpl-TWEOYxL2IMnZgh3t8pVJjwQ5OvcEdARp",
+    "timings":  {
+                    "cache_n":  42,
+                    "prompt_n":  88,
+                    "prompt_ms":  341.247,
+                    "prompt_per_token_ms":  3.8778068181818184,
+                    "prompt_per_second":  257.8777249323803,
+                    "predicted_n":  291,
+                    "predicted_ms":  9462.164,
+                    "predicted_per_token_ms":  32.628151724137936,
+                    "predicted_per_second":  30.64838022253683
+                }
+}
