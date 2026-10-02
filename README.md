@@ -54,7 +54,7 @@ Solve this problem. Put the final answer in \boxed{}.
 <problem>
 ```
 
-Question order: .NET `Random(42)` shuffle of the 500-row test split, first 50, saved as `questions-50.json` and reused for run B. Runner: `run_math500.ps1` in this folder.
+Question order: .NET `Random(42)` shuffle of the 500-row test split, first 50, saved as `questions-50.json` and reused for run B. Runner: `run_math500.ps1` in this folder. Set `$root` (line 10) to your own folder before running it.
 
 Prism’s published thinking recipe is temperature 1.0, top-k 20, min-p 0.05. Their benchmark tables used min-p 0.0. This test holds temperature 0 so the bias is the only difference. These accuracy numbers are not a Prism leaderboard row.
 
@@ -141,7 +141,7 @@ Per question, completion tokens. A `t` marks a reply that hit the 3072 cap.
 | `token-ids.csv` | Hedge-word token ids |
 | `results-A.csv`, `results-B.csv` | Per-question scores |
 | `summary-A.txt`, `summary-B.txt` | One-line summaries |
-| `raw-A/`, `raw-B/` | Each reply, `01.json` through `50.json` |
+| `raw-A/`, `raw-B/` | score row followed by the server response, two JSON objects back to back |
 | `server-A.log`, `server-B.log` | llama-server logs |
 
 ## What this is not
